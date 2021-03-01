@@ -1,4 +1,6 @@
 import nhentai
+from obf import obf
+
 Nhentai = nhentai.NHentai()
 
 def printDoujin(dj):
@@ -44,6 +46,7 @@ def printrDoujin(dj):
 def printdoujin(derID):
     try:
         doujin: dict = Nhentai._get_doujin(id=int(derID))
+        doujin.tags = obf.obfuscate(doujin)
         final = printDoujin(doujin)
         return final
     except ValueError:
