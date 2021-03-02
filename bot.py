@@ -5,10 +5,11 @@ from discord.ext import commands
 from dotenv import load_dotenv
 from worker import worker
 
-client = commands.Bot(command_prefix="???")
-
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
+PREFIX = os.getenv('PREFIX')
+
+client = commands.Bot(command_prefix=PREFIX)
 
 #On startup
 @client.event
@@ -17,18 +18,18 @@ async def on_ready():
         print(client.user.name)
         print(client.user.id)
         print("Discord.py Version: {}".format(discord.__version__))
-        print(f'{client.user} has connected to Discord!')
+        print(f'{client.user} ready!')
     except Exception as e:
         print(e)
 
-#On new message
+#Ping checking
 @client.command()
 async def ping(ctx):
     await ctx.send(f'Pong! {round(client.latency*1000)}ms')
 
-#actual command
+#The actual command
 @client.command()
-async def funky(ctx, arg, cover=""):
+async def inquire(ctx, arg, cover=""):
     resp = worker.printdoujin(arg)
     await ctx.send(resp[0])
     if cover == "-c":
