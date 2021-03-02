@@ -1,14 +1,17 @@
 #bot.py
+#imports
 import os
 import discord
 from discord.ext import commands
 from dotenv import load_dotenv
 from worker import worker
 
+#load environment variables
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 PREFIX = os.getenv('PREFIX')
 
+#instantiate client object
 client = commands.Bot(command_prefix=PREFIX)
 
 #On startup
