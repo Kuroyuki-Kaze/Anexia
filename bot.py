@@ -2,6 +2,7 @@
 #imports
 import os
 import discord
+import re
 from discord.ext import commands
 from dotenv import load_dotenv
 from worker import worker
@@ -37,6 +38,16 @@ async def inquire(ctx, arg, cover=""):
     await ctx.send(resp[0])
     if cover == "-c":
         await ctx.send(resp[1])
+
+#Raw anime handler
+@client.event
+async def on_message(ctx):
+    pattern = r"raw anime"
+    found = re.search(pattern, ctx.content, re.IGNORECASE & re.MULTILINE)
+    if found and ctx.author.bot == False:
+        await ctx.reply("Have you heard of nyaa.si? It provides raw animes, iirc")
+    else:
+        await client.process_commands(ctx)
 
 #If there is an error, it will answer with an error
 @client.event
