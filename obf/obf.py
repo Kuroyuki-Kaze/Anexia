@@ -111,10 +111,5 @@ def obfuscate(d):
     }
 
     for tag in tags:
-<<<<<<< Updated upstream
-        tags[tags.index(tag)] = subtags[tag]
-    return tags
-=======
         tags[tags.index(tag)] = dict.get(subtags, tag, tag)
     return "\n".join(tags)
->>>>>>> Stashed changes
