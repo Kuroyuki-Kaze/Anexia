@@ -133,7 +133,10 @@ def obfuscate(d):
         "breast feeding": "goo goo gaa gaa, here's your milk since you wanted to act like a fucking baby",
         "bride": "A member of your party is just married.",
         "brother": "One of your party member also had their brother join your party as well.",
-        "bukkake": "Get caked, lmao"
+        "bukkake": "Get caked, lmao",
+        "bull": "You rode a bull, for funs and gigs.",
+        "bunny girl": "You met a bunny that can transfrom itself into a girl.",
+        "bunny boy": "You've met a guy wearing a bunny suit."
     }
 
     for tag in tags:
