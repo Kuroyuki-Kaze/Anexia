@@ -10,7 +10,7 @@ def printDoujin(dj):
         m.append("Adventure Title: " + str(dj.title))
         m.append("Also known as (might not display properly): " + str(dj.secondary_title))
         m.append("Guide(s): " + str(dj.artists))
-        m.append("List of things you've done: " + str(dj.tags))
+        m.append("List of things you've done: " + "\n" + str(dj.tags))
         m.append("Journey's written language(s): " + str(dj.languages))
         m.append("Journey book's classification: " + str(dj.categories))
         m.append("Guild: " + str(dj.groups))
