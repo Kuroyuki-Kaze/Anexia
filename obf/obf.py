@@ -19,7 +19,6 @@ def obfuscate(d):
         "stockings": "Your party had a few pairs of stockings, got as a charity donation.",
         "nakadashi": "You shot an arrow right at the bullseye of the target.",
         "schoolgirl uniform": "Some schoolgirl joined your party.",
-        "blowjob": "Your party went to get some ice-cream.",
         "double penetration": "got speared, twice kekw",
         "story arc": "Your party decided to take a break from continuing forward and just wrote down all the stories they had been up against.",
         "incest": "Two of your party members have found themselves in love with each other.",
@@ -106,10 +105,31 @@ def obfuscate(d):
         "big clit": "\"Carrying a goddamn obelisk isn't a bad idea\", they said.",
         "big lips": "You had visited a theatre with oversized curtains.",
         "big muscles": "You had met a very buffed guy. He challenged your team, but you refused.",
-        "big nipples": "You've somehow met (got caught) the captain of Houshou pirates.",
-        "big penis": "\"Carrying a meat obelisk isn't a bad idea\", they said."
+        "big nipples": "You had somehow met (got caught) the captain of Houshou pirates.",
+        "big penis": "\"Carrying a meat obelisk isn't a bad idea\", they said.",
+        "big vagina": "A human sinkhole. Figuratively.",
+        "bike shorts": "You had met a person riding a bike in bike shorts.",
+        "bikini": "Your party went to the beach to admire the view (really just the womans over there).",
+        "birth": "You went to help a woman deliver a baby because the hospital is too far away.",
+        "bisexual": "Double dealing character.",
+        "blackmail": "dude, i know you really wanted that crystal, but blackmailing? really?",
+        "blind": "Your party helped a blind person cross the road. <3",
+        "blindfold": "Putting a blindfold on an idiot of a robber that tried to rob you.",
+        "blood": "Your party fought a ferocious battle that spilled blood everywhere.",
+        "bloomers": "You photographed some people in their bloomers. Creep.",
+        "blowjob": "Your party went to get some ice-cream.",
+        "blowjob face": "Your party decided to take some photos while eating ice-cream.",
+        "body modification": "<100 percent human.",
+        "body painting": "Have you saw the video that one women was walking through NYC with no pants and just painting?",
+        "bodystocking": "You met someone wearing a ridiculously big size stockings.",
+        "bodysuit": "You saw someone riding a bike with a full bodysuit on. Wonder where they're going.",
+        "body swap": "Some of your party members suddenly switched bodies with each other while fighting a witch.",
+        "body writing": "A human body isn't a public bathroom stall. Or maybe it is, I don't know.",
+        "bondage": "You got robbed by a group of robbers and they tied you onto the trees. Though with enough tries, the trees came off because they weren't very big.",
+        "bowbows": "You met a perosn named bowbows."
+        
     }
 
     for tag in tags:
         tags[tags.index(tag)] = dict.get(subtags, tag, tag)
-    return "\n".join(tags)
+    return "\n\\".join(tags)
