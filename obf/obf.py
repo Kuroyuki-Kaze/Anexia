@@ -77,4 +77,4 @@ def obfuscate(d):
     }
     for tag in tags:
         tags[tags.index(tag)] = subtags[tag]
-    return "\n".join(tags)
+    return tags
