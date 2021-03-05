@@ -126,8 +126,14 @@ def obfuscate(d):
         "body swap": "Some of your party members suddenly switched bodies with each other while fighting a witch.",
         "body writing": "A human body isn't a public bathroom stall. Or maybe it is, I don't know.",
         "bondage": "You got robbed by a group of robbers and they tied you onto the trees. Though with enough tries, the trees came off because they weren't very big.",
-        "bowbows": "You met a perosn named bowbows."
-        
+        "bowbows": "You met a person named bowbows.",
+        "braces": "You met a person named braces, who is also wearing braces.",
+        "brain fuck": "++++++[>++++++++++<-]>++++<++[>+++++++<-]>.[>+<]>+.",
+        "breast expansion": "You've got a big, juicy chicken breast, and now it's even bigger.",
+        "breast feeding": "goo goo gaa gaa, here's your milk since you wanted to act like a fucking baby",
+        "bride": "A member of your party is just married.",
+        "brother": "One of your party member also had their brother join your party as well.",
+        "bukkake": "Get caked, lmao"
     }
 
     for tag in tags:
