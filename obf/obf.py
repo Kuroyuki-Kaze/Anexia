@@ -179,7 +179,20 @@ def obfuscate(d):
         "cockslapping": "Getting a boner in public must have been embarassing.",
         "coffee no nai rokkaku kissa": "You had gone into a coffee shop that doesn't have coffee in Rokkaku.",
         "collar": "You got a pet animal.",
-        "comic": "You decided to add a comic part to your adventuring book."
+        "comic": "You decided to add a comic part to your adventuring book.",
+        "compilation": "You stopped and compiled everyone's story into one book.",
+        "condom": "Always use armor when going to battle, you might regret not having it later.",
+        "conjoined": "Fusion gone wrong.",
+        "coprophagia": "Ate shit.",
+        "corruption": "You know what runs a country?\n  That's right, corruption.",
+        "corset": "Do you know what's a corset? Me neither.",
+        "cosplaying": "One of your party members had learned how to shapeshift.",
+        "cousin": "Stop messing around with your itoko.",
+        "cowgirl": "The cow print girls trend is spreading like wildfire.",
+        "cowman": "cow print man, is definitely something you wouldn't like.",
+        "crossdressing": "You got jebaited.",
+        "crotch tattoo": "Ah yes, the seal of the succubus. Don't break it, or it's gonna be a bad time (good time, you degenerate).",
+        "crown": "Coronae de aurum."
     }
 
     for tag in tags:
