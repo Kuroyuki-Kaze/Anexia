@@ -159,7 +159,7 @@ def obfuscate(d):
         "chinpoko machine": "You met some guy named Chinpoko machine.",
         "chirako": "You met a guy named Chirako.",
         "chiyou yoyuchi": "You met a guy named Chiyou yoyuchi.",
-        "chloroform": "CHCl3"
+        "chloroform": "CHCl3",
         "chobikuma": "You met a guy named chobikuma.",
         "chocolipeyes": "You met a guy named chocolipeyes.",
         "christmas": "T'was Christmas time.",
