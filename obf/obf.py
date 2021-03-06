@@ -150,7 +150,36 @@ def obfuscate(d):
         "cephon": "You met a guy named Cephon.",
         "cervix penetration": "One of your female party members got speared, vertically, and destroyed their insides. Ouch.",
         "chastity belt": "Frequent mana outburst led to one of your member being put on a magic limiter.",
-
+        "cheating": "You are dumb, so you cheated on your test.",
+        "cheerleader": "You met a very beautiful cheerleader.",
+        "cheese pan": "You met a guy named Cheese pan, funnily enough.",
+        "chikan": "Be careful in big crowds, you might get sekuhara'd.",
+        "chinese dress": "You went to ~~Liyue~~.",
+        "chino": "some military uniform shit, idk",
+        "chinpoko machine": "You met some guy named Chinpoko machine.",
+        "chirako": "You met a guy named Chirako.",
+        "chiyou yoyuchi": "You met a guy named Chiyou yoyuchi.",
+        "chloroform": "CHCl3"
+        "chobikuma": "You met a guy named chobikuma.",
+        "chocolipeyes": "You met a guy named chocolipeyes.",
+        "christmas": "T'was Christmas time.",
+        "circle takaya": "You met a guy named circle takaya.",
+        "clamp": "You found a clamp while going through the auto town.",
+        "clit growth": "Longer obelisk, yeah.",
+        "clit insertion": "wait what how stick go in stick??",
+        "clone": "The Sisters project is really going out of control.",
+        "closed eyes": "You closed your eyes, and do you feel like nothing has changed at all?",
+        "clothed female nude male": "Your male party members' armor was destroyed.",
+        "clothed male nude female": "Your female party members' armor was destroyed.",
+        "clothed paizuri": "Getting ice-cream on your clothing sucks, but then again, you did hold the ice-cream like it was Megumin's staff.",
+        "clown": "You met an absolute fucking clown.",
+        "coach": "You had got a coach to help you practice with your sports.",
+        "cobura no oyatsu": "You met a guy named Cobura no Oyatsu.",
+        "cockphagia": "You ate a hot dog.",
+        "cockslapping": "Getting a boner in public must have been embarassing.",
+        "coffee no nai rokkaku kissa": "You had gone into a coffee shop that doesn't have coffee in Rokkaku.",
+        "collar": "You got a pet animal.",
+        "comic": "You decided to add a comic part to your adventuring book."
     }
 
     for tag in tags:
