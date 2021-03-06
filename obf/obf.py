@@ -136,7 +136,9 @@ def obfuscate(d):
         "bukkake": "Get caked, lmao",
         "bull": "You rode a bull, for funs and gigs.",
         "bunny girl": "You met a bunny that can transfrom itself into a girl.",
-        "bunny boy": "You've met a guy wearing a bunny suit."
+        "bunny boy": "You've met a guy wearing a bunny suit.",
+        "buranran": "You've met a guy named Buranran.",
+        "burping": ""
     }
 
     for tag in tags:
