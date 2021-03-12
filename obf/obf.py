@@ -192,7 +192,14 @@ def obfuscate(d):
         "cowman": "cow print man, is definitely something you wouldn't like.",
         "crossdressing": "You got jebaited.",
         "crotch tattoo": "Ah yes, the seal of the succubus. Don't break it, or it's gonna be a bad time (good time, you degenerate).",
-        "crown": "Coronae de aurum."
+        "crown": "Coronae de aurum.",
+        "cum bath": "Your party went to take a coconut milk bath.",
+        "cumflation": "One of your party got inflated like a balloon :kekw:",
+        "cum in eye": "One of your party got hit in the eye by an arrow.",
+        "cum swap": "Build swap but way crazier :flushed:",
+        "cunnilingus": "Don't make an excuse to not go down on your lover when she asks for it dude.",
+        "cuntboy": "男の娘だ。",
+        "cuntbusting": "The golden door is of no more."
     }
 
     for tag in tags:
