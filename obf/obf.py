@@ -7,7 +7,7 @@ def obfuscate(d):
     tags = list(d.tags)
     subtags = {
         "sole male": "Your party had a single male, how lame.",
-        "sole female": "Your party hds a single female, how lame.",
+        "sole female": "Your party had a single female, how lame.",
         "threesome": "A three person party, sounds like a fun party to me.",
         "wholsesome": "Your party had a great time.",
         "ugly bastard": "Your party encountered... quite a heinous beast... ew.",
