@@ -43,10 +43,13 @@ def printrDoujin(dj):
     r.append(str(dj.images[0]))
     return r
 
-def printdoujin(derID):
+def printdoujin(derID, obffact):
     try:
         doujin: dict = Nhentai._get_doujin(id=int(derID))
-        doujin.tags = obf.obfuscate(doujin)
+        if obffact == "-o":
+            doujin.tags = obf.obfuscate(doujin)
+        else:
+            doujin.tags = "\n".join(doujin.tags)
         final = printDoujin(doujin)
         return final
     except ValueError:
