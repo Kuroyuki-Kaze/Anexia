@@ -33,8 +33,8 @@ async def ping(ctx):
 
 #The actual command
 @client.command()
-async def sourcefind(ctx, arg, cover=""):
-    resp = worker.printdoujin(arg)
+async def sourcefind(ctx, arg, cover="", obf=""):
+    resp = worker.printdoujin(arg, obf)
     await ctx.send(resp[0])
     if cover == "-c":
         await ctx.send(resp[1])
