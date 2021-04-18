@@ -22,6 +22,7 @@ def obfuscate(d):
         "story arc": "Your party decided to take a break from continuing forward and just wrote down all the stories they had been up against.",
         "incest": "Two of your party members have found themselves in love with each other.",
         "x-ray": "You acquired mana vision",
+        "--------": "---------------------------------------------------------------------",
         "0109samurai": "You met a guy named 0109samurai.",
         "35 machi": "You met a guy named 35 machi.",
         "3d": "You somehow was able to gain control over an extra spacial dimension.",
@@ -198,10 +199,31 @@ def obfuscate(d):
         "cum in eye": "One of your party got hit in the eye by an arrow.",
         "cum swap": "Build swap but way crazier :flushed:",
         "cunnilingus": "Don't make an excuse to not go down on your lover when she asks for it dude.",
-        "cuntboy": "男の娘だ。",
-        "cuntbusting": "The golden door is of no more."
+        "cuntboy": "Daga, otoko da.",
+        "cuntbusting": "The golden door is of no more.",
+        "dakimakura": "Your pillow, that's a pretty nice looking one.",
+        "dame ningen koubou": "You had met a person called Dame ningen \"Koubou\".",
+        "dancing boin": "You had met a person named dancing boin.",
+        "dentetsuya": "You had met a person named Dentetsuya.",
+        "dark nipples": "The sun grew dark, as an event horizon appears. The holy grail war has occured.",
+        "dark sclera": "The black eyes of the devil envelops you with horror.",
+        "dark skin": "You had met a person with from the lower Mittelgard Kingdom.",
+        "daughter": "Your daughter joined your party.",
+        "deepthroat": "Your party went into a giant and destroyed it from the inside out.",
+        "deer boy": "Oh deer, it's a boy.",
+        "deer girl": "Oh deer, it's a girl.",
+        "defloration": "Picked some flowers for a souvenir.",
+        "demon": "You had encountered a demon during your trip through hell.",
+        "demon girl": "You had encountered a female demon during your trip through hell.",
+        "denki enma": "You had met a person named Denki Enma.",
+        "diaper": "Diaper. notlikethis",
+        "dickgirl on dickgirl": "The bot creator's favorite tag, futa on futa, yum.",
+        "dickgirl on male": "Futa on meat ball, a weird combination.",
+        "dickgirls only": "Futas only, hell yeah, that's why I, and your party, loves visiting Greece.",
+        "dick growth": "You watched as a magical tree grow very fast, in the matters of minutes.",
+        "dicknipples": "Rising on the tip of the mountains, are some beautiful sausages and meatballs."
     }
 
     for tag in tags:
         tags[tags.index(tag)] = dict.get(subtags, tag, tag)
-    return "\n\\".join(tags)
+    return "\n".join(tags)
