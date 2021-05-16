@@ -76,7 +76,7 @@ def obfuscate(d):
         "assjob": "shirikoki",
         "atotama": "You met a guy named Atotama.",
         "aunt": "Your aunt came to visit.",
-        "autofellatio": "Everyone needs some self-comfort once in a while, and so does you.",
+        "autofellatio": "Everyone needs some self-comfort once in a while, and so do you.",
         "autopaizuri": "One of your party member needs some self-comforting after some of those traumas",
         "ayako hanabishi": "You met a guy named Ayako Hanabishi.",
         "ayakouji haruna": "You met a guy named Ayakouji Haruna.",
