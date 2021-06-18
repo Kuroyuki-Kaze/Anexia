@@ -1,7 +1,7 @@
-import nhentai
+from NHentai.nhentai import NHentai
 from obf import obf
 
-Nhentai = nhentai.NHentai()
+Nhentai = NHentai()
 
 def printDoujin(dj):
     r = []
