@@ -87,7 +87,8 @@ async def sourcefind(ctx, arg, *args):
 @client.command()
 async def queryfind(ctx, arg: str, sort: str = 'popular', page: int = 1):
     resp = worker.printSearchDoujin(arg, sort, page)
-    await ctx.send(resp)
+    for thing in resp:
+        await ctx.send(thing, end="\n\n")
 
 #Raw anime handler
 @client.event

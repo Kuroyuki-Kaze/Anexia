@@ -44,7 +44,7 @@ def printrDoujin(dj):
     r.append(str(dj.images[0]))
     return r
 
-def printSearchDoujin(query: str, sort: str, page: str) -> str:
+def printSearchDoujin(query: str, sort: str, page: str) -> list:
     search_obj = Nhentai.search(query=query, sort=sort, page=page)
     r = []
     r.append("**Query was:** " + str(search_obj.query))
@@ -56,7 +56,7 @@ def printSearchDoujin(query: str, sort: str, page: str) -> str:
     for doujin in search_obj.doujins:
         r.append(f"ID: {doujin.id}\nTitle: {doujin.title}\nLanguage: {doujin.lang}")
     
-    return "\n\n".join(r)
+    return r
 
 def printdoujin(derID, obffact):
     try:
