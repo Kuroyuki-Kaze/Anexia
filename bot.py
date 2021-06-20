@@ -3,6 +3,7 @@
 import os
 import discord
 import re
+import time
 from discord import channel
 from discord.ext import commands
 from dotenv import load_dotenv
@@ -89,6 +90,7 @@ async def queryfind(ctx, arg: str, sort: str = 'popular', page: int = 1):
     resp = worker.printSearchDoujin(arg, sort, page)
     for thing in resp:
         await ctx.send(thing + "\n\n")
+        time.sleep(0.5)
 
 #Raw anime handler
 @client.event
