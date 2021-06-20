@@ -1,3 +1,4 @@
+from NHentai.entities.doujin import Doujin
 from NHentai.nhentai import NHentai
 from obf import obf
 
@@ -43,9 +44,23 @@ def printrDoujin(dj):
     r.append(str(dj.images[0]))
     return r
 
+def printSearchDoujin(query: str, sort: str, page: str) -> str:
+    search_obj = Nhentai.search(query=query, sort=sort, page=page)
+    r = []
+    r.append("Query was: " + str(search_obj.query))
+    r.append("Sort was: " + str(search_obj.sort))
+    r.append("Total results: " + str(search_obj.total_results))
+    r.append("Total result pages: " + str(search_obj.total_pages))
+    r.append("Doujins: ")
+    
+    for doujin in search_obj.doujins:
+        r.append(f"ID: {doujin.id}\nTitle: {doujin.title}\nLanguage: {doujin.lang}\nTags: {doujin.data_tags}")
+    
+    return "\n\n".join(r)
+
 def printdoujin(derID, obffact):
     try:
-        doujin: dict = Nhentai._get_doujin(id=int(derID))
+        doujin: Doujin = Nhentai.get_doujin(id=int(derID))
         if obffact == "-o":
             doujin.tags = obf.obfuscate(doujin)
         else:
