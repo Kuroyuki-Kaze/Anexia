@@ -47,11 +47,11 @@ def printrDoujin(dj):
 def printSearchDoujin(query: str, sort: str, page: str) -> str:
     search_obj = Nhentai.search(query=query, sort=sort, page=page)
     r = []
-    r.append("Query was: " + str(search_obj.query))
-    r.append("Sort was: " + str(search_obj.sort))
-    r.append("Total results: " + str(search_obj.total_results))
-    r.append("Total result pages: " + str(search_obj.total_pages))
-    r.append("Doujins: ")
+    r.append("**Query was:** " + str(search_obj.query))
+    r.append("**Sort was:** " + str(search_obj.sort))
+    r.append("**Total results:** " + str(search_obj.total_results))
+    r.append("**Total result pages:** " + str(search_obj.total_pages))
+    r.append("**Doujins:** ")
     
     for doujin in search_obj.doujins:
         r.append(f"ID: {doujin.id}\nTitle: {doujin.title}\nLanguage: {doujin.lang}\nTags: {doujin.data_tags}")
