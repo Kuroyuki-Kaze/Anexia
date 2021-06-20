@@ -55,7 +55,7 @@ def printSearchDoujin(query: str, sort: str, page: str) -> list:
     r.append("**Doujins:** ")
     
     for doujin in search_obj.doujins:
-        r.append(f"ID: {doujin.id}\nTitle: {doujin.title}\nLanguage: {doujin.lang}")
+        r.append(f"ID: {doujin.id}\nTitle: {doujin.title}\nLanguage: {doujin.lang}\n")
     
     r.append("--------END OF RESPONSE--------")
     return r
