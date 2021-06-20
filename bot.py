@@ -84,6 +84,11 @@ async def sourcefind(ctx, arg, *args):
     if cover == "-c":
         await ctx.send(resp[1])
 
+@client.command()
+async def queryfind(ctx, arg: str, sort: str = 'popular', page: int = 1):
+    resp = worker.printSearchDoujin(arg, sort, page)
+    await ctx.send(resp)
+
 #Raw anime handler
 @client.event
 async def on_message(ctx):
