@@ -8,6 +8,7 @@ from discord import channel
 from discord.ext import commands
 from dotenv import load_dotenv
 from worker import worker
+from worker import QRcreator
 
 #load environment variables
 load_dotenv()
@@ -91,6 +92,28 @@ async def queryfind(ctx, arg: str, sort: str = 'popular', page: int = 1):
     for thing in resp:
         await ctx.send(thing + "\n\n")
         time.sleep(0.5)
+
+@client.command()
+async def QR(ctx, arg: str, masknum: int = 0):
+    try:
+        resp = QRcreator.createQR(arg, masknum)
+        squashed = []
+        for i in range(5):
+            squashed.append("0000000000000000000000000000000000000")
+        for row in resp:
+            c = []
+            c.append("00000")
+            for bit in row:
+                c.append(bit)
+            c.append("00000")
+            squashed.append("".join(c))
+        
+        final = "\n".join(squashed)
+        final.translate(final.maketrans("01","⬜⬛"))
+
+        await ctx.send(final)
+    except QRcreator.LengthError:
+        await ctx.send("ERROR: Argument longer than 7 characters (56 bits)")
 
 #Raw anime handler
 @client.event
