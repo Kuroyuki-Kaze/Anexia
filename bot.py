@@ -98,20 +98,26 @@ async def QR(ctx, arg: str, masknum: int = 0):
     try:
         resp = QRcreator.createQR(arg, masknum)
         squashed = []
-        for i in range(5):
-            squashed.append("0000000000000000000000000000000000000")
+        for i in range(4):
+            squashed.append("00000000000000000000000000000")
         for row in resp:
             c = []
-            c.append("00000")
+            c.append("0000")
             for bit in row:
-                c.append(bit)
-            c.append("00000")
+                c.append(str(bit))
+            c.append("0000")
             squashed.append("".join(c))
         
+        for i in range(4):
+            squashed.append("00000000000000000000000000000")
+        
         final = "\n".join(squashed)
-        final.translate(final.maketrans("01","⬜⬛"))
+        t = final.translate(final.maketrans("01","⬜⬛"))
 
-        await ctx.send(final)
+        for i in range(5):
+            await ctx.send(t[i*150:(i+1)*150])
+
+        await ctx.send(t[750:])
     except QRcreator.LengthError:
         await ctx.send("ERROR: Argument longer than 7 characters (56 bits)")
 

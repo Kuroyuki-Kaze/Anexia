@@ -1,5 +1,5 @@
 import re
-from dictsToUse import someDicts
+from worker.dictsToUse import someDicts
 
 #Creator: Kuroyuki Kaze, @kuroyuki_kaze (Twitter)
 #Version: 1.1
