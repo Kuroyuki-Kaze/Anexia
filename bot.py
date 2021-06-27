@@ -116,7 +116,9 @@ async def QR(ctx, arg: str, masknum: int = 0):
 
         for i in range(5):
             await ctx.send(t[i*150:(i+1)*150])
+            time.sleep(0.5)
 
+        time.sleep(0.5)
         await ctx.send(t[750:])
     except QRcreator.LengthError:
         await ctx.send("ERROR: Argument longer than 7 characters (56 bits)")
